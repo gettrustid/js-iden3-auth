@@ -1,0 +1,20 @@
+import { DID } from 'js-iden3-core-custom';
+export const userStateError = new Error(`user state is not valid`);
+export const gistStateError = new Error(`gist state is not valid`);
+export async function checkUserState(resolver, userId, userState) {
+    return await resolver.resolve(userId.bigInt(), userState.bigInt());
+}
+export async function checkGlobalState(resolver, state) {
+    return await resolver.rootResolve(state.bigInt());
+}
+export async function checkIssuerNonRevState(resolver, issuerId, issuerClaimNonRevState) {
+    return await resolver.resolve(issuerId.bigInt(), issuerClaimNonRevState.bigInt());
+}
+export function getResolverByID(resolvers, id) {
+    const userDID = DID.parseFromId(id);
+    return getResolverByDID(resolvers, userDID);
+}
+export function getResolverByDID(resolvers, did) {
+    const { blockchain, networkId } = DID.decodePartsFromId(DID.idFromDID(did));
+    return resolvers[`${blockchain}:${networkId}`];
+}
