@@ -1,4 +1,4 @@
-import { Id, DID } from '@iden3/js-iden3-core';
+import { Id, DID } from 'js-iden3-core-custom';
 import { IStateResolver, ResolvedState, Resolvers } from '@lib/state/resolver';
 import { Hash } from '@iden3/js-merkletree';
 export const userStateError = new Error(`user state is not valid`);

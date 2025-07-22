@@ -1,4 +1,4 @@
-import { cacheLoader } from '@0xpolygonid/js-sdk';
+import { cacheLoader } from '@custom-0xpolygonid/js-sdk';
 import { DocumentLoader } from '@iden3/js-jsonld-merklization';
 import { VerifyOpts } from '@lib/circuits';
 import { IStateResolver, ResolvedState, Resolvers } from '@lib/state/resolver';

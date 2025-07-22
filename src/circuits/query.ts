@@ -1,4 +1,4 @@
-import { Id, SchemaHash } from '@iden3/js-iden3-core';
+import { Id, SchemaHash } from 'js-iden3-core-custom';
 import { getDocumentLoader } from '@iden3/js-jsonld-merklization';
 import { DocumentLoader } from '@iden3/js-jsonld-merklization';
 import {
@@ -14,7 +14,7 @@ import {
   checkCircuitOperator,
   JsonDocumentObject,
   VerifiablePresentation
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { VerifyOpts } from './registry';
 import { JsonLd } from 'jsonld/jsonld-spec';
 

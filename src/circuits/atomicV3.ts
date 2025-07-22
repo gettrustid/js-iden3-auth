@@ -3,7 +3,7 @@ import { ClaimOutputs, Query } from '@lib/circuits/query';
 import { Resolvers } from '@lib/state/resolver';
 import { IDOwnershipPubSignals } from '@lib/circuits/ownershipVerifier';
 import { checkIssuerNonRevState, checkUserState, getResolverByID } from '@lib/circuits/common';
-import { DID, getDateFromUnixTimestamp } from '@iden3/js-iden3-core';
+import { DID, getDateFromUnixTimestamp } from 'js-iden3-core-custom';
 import { DocumentLoader, getDocumentLoader } from '@iden3/js-jsonld-merklization';
 import {
   AtomicQueryV3PubSignals,
@@ -21,7 +21,7 @@ import {
   validateOperators,
   VerifiablePresentation,
   verifyFieldValueInclusionNativeExistsSupport
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { JsonLd } from 'jsonld/jsonld-spec';
 import { CONSTANTS } from '@lib/constants';
 

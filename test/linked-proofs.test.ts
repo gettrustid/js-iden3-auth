@@ -1,8 +1,8 @@
-import { AuthorizationRequestMessage, CircuitId, ProofType } from '@0xpolygonid/js-sdk';
+import { AuthorizationRequestMessage, CircuitId, ProofType } from '@custom-0xpolygonid/js-sdk';
 import { Verifier } from '@lib/auth/auth';
 import { resolvers, schemaLoader, testOpts } from './mocks';
 import path from 'path';
-import { PROTOCOL_CONSTANTS } from '@0xpolygonid/js-sdk';
+import { PROTOCOL_CONSTANTS } from '@custom-0xpolygonid/js-sdk';
 
 describe('Linked proofs verification', () => {
   it('should verification pass', async () => {

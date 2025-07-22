@@ -1,5 +1,5 @@
 {
-  "name": "@iden3/js-iden3-auth",
+  "name": "js-iden3-auth-custom",
   "version": "1.10.1",
   "description": "iden3-auth implementation in JavaScript",
   "main": "dist/node/cjs/index.js",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@0xpolygonid/js-sdk": "1.30.0",
+    "@custom-0xpolygonid/js-sdk": "github:gettrustid/js-sdk",
     "@iden3/js-crypto": "1.3.1",
     "@iden3/js-iden3-core": "1.7.0",
     "@iden3/js-jsonld-merklization": "1.6.1",
@@ -43,6 +44,7 @@
     "@iden3/js-merkletree": "1.5.0",
     "did-resolver": "^4.1.0",
     "ethers": "^5.7.2",
+    "js-iden3-core-custom": "github:gettrustid/js-iden3-core",
     "quick-lru": "^7.0.1",
     "tslib": "^2.6.2",
     "uuid": "^9.0.1"

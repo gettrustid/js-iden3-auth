@@ -16,7 +16,7 @@ import {
   Operators,
   fieldValueFromVerifiablePresentation,
   VerifiablePresentation
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 
 /**
  * Verifies the linked multi-query circuit.

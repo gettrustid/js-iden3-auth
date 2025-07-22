@@ -5,4 +5,4 @@ export {
   ZeroKnowledgeProofRequest,
   ZeroKnowledgeProofResponse,
   PROTOCOL_CONSTANTS
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';

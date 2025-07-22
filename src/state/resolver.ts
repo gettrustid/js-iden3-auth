@@ -1,4 +1,4 @@
-import { Id } from '@iden3/js-iden3-core';
+import { Id } from 'js-iden3-core-custom';
 import { ethers } from 'ethers';
 import { ICache, createInMemoryCache } from '@lib/cache';
 import { Abi, Abi__factory } from '@lib/state/types/ethers-contracts';

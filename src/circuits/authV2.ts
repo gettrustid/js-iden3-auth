@@ -1,9 +1,9 @@
-import { getDateFromUnixTimestamp } from '@iden3/js-iden3-core';
+import { getDateFromUnixTimestamp } from 'js-iden3-core-custom';
 import { PubSignalsVerifier, VerifyOpts } from '@lib/circuits/registry';
 import { IDOwnershipPubSignals } from '@lib/circuits/ownershipVerifier';
 import { checkGlobalState, getResolverByID } from '@lib/circuits/common';
 import { Resolvers } from '@lib/state/resolver';
-import { AuthV2PubSignals, BaseConfig, byteEncoder } from '@0xpolygonid/js-sdk';
+import { AuthV2PubSignals, BaseConfig, byteEncoder } from '@custom-0xpolygonid/js-sdk';
 import { CONSTANTS } from '@lib/constants';
 
 export class AuthPubSignalsV2 extends IDOwnershipPubSignals implements PubSignalsVerifier {

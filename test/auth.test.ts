@@ -12,7 +12,7 @@ import {
   PlainPacker,
   ZeroKnowledgeProofRequest,
   buildAccept
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { AuthPubSignalsV2 } from '@lib/circuits/authV2';
 import {
   createAuthorizationRequest,
@@ -22,7 +22,7 @@ import {
 import { Circuits } from '@lib/circuits/registry';
 import path from 'path';
 import { resolveDIDDocument, resolvers, schemaLoader, testOpts } from './mocks';
-import { getDateFromUnixTimestamp, getUnixTimestamp } from '@iden3/js-iden3-core';
+import { getDateFromUnixTimestamp, getUnixTimestamp } from 'js-iden3-core-custom';
 
 describe('auth tests', () => {
   const connectionString = process.env.IPFS_URL ?? 'https://ipfs.io';

@@ -1,4 +1,4 @@
-import { getDateFromUnixTimestamp } from '@iden3/js-iden3-core';
+import { getDateFromUnixTimestamp } from 'js-iden3-core-custom';
 import { Resolvers } from '@lib/state/resolver';
 import { checkQueryV2Circuits, ClaimOutputs, Query } from '@lib/circuits/query';
 import { PubSignalsVerifier, VerifyOpts } from '@lib/circuits/registry';
@@ -11,7 +11,7 @@ import {
   byteEncoder,
   CircuitId,
   VerifiablePresentation
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { CONSTANTS } from '@lib/constants';
 
 export class AtomicQueryMTPV2PubSignalsVerifier

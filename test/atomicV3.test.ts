@@ -8,7 +8,7 @@ import {
   cacheLoader,
   CircuitId,
   ProofType
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { DocumentLoader } from '@iden3/js-jsonld-merklization';
 
 const schemaLoader: DocumentLoader = cacheLoader({

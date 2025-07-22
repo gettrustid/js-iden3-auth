@@ -3,7 +3,7 @@ import { checkQueryV2Circuits, ClaimOutputs, Query } from '@lib/circuits/query';
 import { Resolvers } from '@lib/state/resolver';
 import { IDOwnershipPubSignals } from '@lib/circuits/ownershipVerifier';
 import { checkIssuerNonRevState, checkUserState, getResolverByID } from '@lib/circuits/common';
-import { getDateFromUnixTimestamp } from '@iden3/js-iden3-core';
+import { getDateFromUnixTimestamp } from 'js-iden3-core-custom';
 import { DocumentLoader } from '@iden3/js-jsonld-merklization';
 import {
   AtomicQuerySigV2PubSignals,
@@ -11,7 +11,7 @@ import {
   byteEncoder,
   CircuitId,
   VerifiablePresentation
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { CONSTANTS } from '@lib/constants';
 
 export class AtomicQuerySigV2PubSignalsVerifier

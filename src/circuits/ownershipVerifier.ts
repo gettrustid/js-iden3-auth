@@ -1,4 +1,4 @@
-import { Id, DID } from '@iden3/js-iden3-core';
+import { Id, DID } from 'js-iden3-core-custom';
 
 export abstract class IDOwnershipPubSignals {
   userId!: Id;

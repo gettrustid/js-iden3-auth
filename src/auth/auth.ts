@@ -27,12 +27,12 @@ import {
   JSONObject,
   verifyExpiresTime,
   parseAcceptProfile
-} from '@0xpolygonid/js-sdk';
+} from '@custom-0xpolygonid/js-sdk';
 import { Resolvable } from 'did-resolver';
 import { Options, DocumentLoader } from '@iden3/js-jsonld-merklization';
 import path from 'path';
-import { DID, getUnixTimestamp } from '@iden3/js-iden3-core';
-import { ZeroKnowledgeProofRequest } from '@0xpolygonid/js-sdk';
+import { DID, getUnixTimestamp } from 'js-iden3-core-custom';
+import { ZeroKnowledgeProofRequest } from '@custom-0xpolygonid/js-sdk';
 
 /**
  * Options to pass to createAuthorizationRequest function
